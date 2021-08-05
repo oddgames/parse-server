@@ -100,9 +100,8 @@ export class FunctionsRouter extends PromiseRouter {
     return {
       success: function (result) {
         resolve({
-          response: {
-            result: Parse._encode(result),
-          },
+          Parse._encode(result),
+          ,
         });
       },
       error: function (message) {
