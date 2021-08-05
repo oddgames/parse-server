@@ -99,9 +99,8 @@ export class FunctionsRouter extends PromiseRouter {
   static createResponseObject(resolve, reject) {
     return {
       success: function (result) {
-        resolve({
-          Parse._encode(result),
-          ,
+        resolve({ response:
+          Parse._encode(result)
         });
       },
       error: function (message) {
